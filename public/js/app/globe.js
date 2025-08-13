@@ -312,8 +312,8 @@ function initializeGlobe() {
             } else if (isRosaliaRoutes && typeof rosaliaRoutes !== 'undefined') {
                 flightRoutes = rosaliaRoutes;
             } else {
-                console.error('Flight routes not loaded. Expected johnRoutes or rosaliaRoutes global variable.');
-                document.getElementById('flight-info').textContent = 'Error: Flight data not loaded correctly. Check console.';
+                // Data not ready yet, retry in a moment\n                console.log('Waiting for flight data to load...');\n                setTimeout(() => buildYearFlightPaths(yearStr), 200);
+                document.getElementById('flight-info').textContent = 'Loading flight data...';
                 return;
             }
             
@@ -427,7 +427,7 @@ function initializeGlobe() {
         `;
         
         // Update year display
-        document.querySelector('.flight-year').textContent = `${flight.year} Journeys`;
+        document.querySelector('.flight-year').textContent = `${flight.year} Flights`;
     }
     
     // Clean up scene when changing years
@@ -664,7 +664,7 @@ function initializeGlobe() {
         loadingErrors = [];
         selectedYear = yearStr;
         document.getElementById('flight-info').textContent = `Loading flights from ${yearStr}...`;
-        document.querySelector('.flight-year').textContent = `${yearStr} Journeys`;
+        document.querySelector('.flight-year').textContent = `${yearStr} Flights`;
         buildYearFlightPaths(yearStr);
     }
 
@@ -700,3 +700,10 @@ function initializeGlobe() {
     animateFlightsForYear(defaultYear);
 };
 
+
+// Initialize the globe when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeGlobe);
+} else {
+    initializeGlobe();
+}

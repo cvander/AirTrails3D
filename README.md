@@ -76,14 +76,14 @@ cd airtrails3d
 ### 2. Start Server
 ```bash
 node server.js
-# Server starts at http://localhost:3000
+# Server starts at http://localhost:5050
 ```
 
 > **Note:** No `npm install` needed! This project has zero dependencies and runs with Node.js built-in modules only.
 
 ### 3. View Visualizations
-- John Doe's routes: `http://localhost:3000/john-doe`
-- Rosalia's routes: `http://localhost:3000/rosalia`
+- John Doe's routes: `http://localhost:5050/john-doe`
+- Rosalia's routes: `http://localhost:5050/rosalia`
 
 ## 📊 Creating Route Data
 
@@ -236,11 +236,22 @@ Create fictional character journeys for storytelling or gaming.
 
 ## 🤝 Contributing
 
-Feel free to contribute additional character routes, visual themes, or technical improvements. The system is designed to be easily extensible for new travel patterns and regions.
+We welcome contributions! Whether you want to add new travel routes, enhance visualizations, fix bugs, or improve documentation, your help is appreciated.
+
+Please see our [Contributing Guidelines](CONTRIBUTING.md) for detailed information on how to get started.
+
+**Ways to contribute:**
+- Add new fictional character routes
+- Enhance 3D visualizations and animations
+- Improve performance and browser compatibility
+- Fix bugs and add new features
+- Improve documentation and examples
 
 ## 📄 License
 
-This project demonstrates technical capabilities for educational and entertainment purposes. Flight data is sourced from publicly available information.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Flight data is sourced from publicly available information and is used for educational and demonstration purposes only.
 
 ---
 
