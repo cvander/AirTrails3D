@@ -1,0 +1,84 @@
+{
+  "2025": [
+    {
+      "id": 1,
+      "from": "LAX",
+      "to": "MAD",
+      "date": "2025-01-15",
+      "flightNumber": "IB 6251",
+      "airline": "Iberia"
+    },
+    {
+      "id": 2,
+      "from": "MAD",
+      "to": "GRU",
+      "date": "2025-02-03",
+      "flightNumber": "IB 6833",
+      "airline": "Iberia"
+    },
+    {
+      "id": 3,
+      "from": "GRU",
+      "to": "SCL",
+      "date": "2025-02-10",
+      "flightNumber": "LA 706",
+      "airline": "LATAM"
+    },
+    {
+      "id": 4,
+      "from": "SCL",
+      "to": "LIM",
+      "date": "2025-02-18",
+      "flightNumber": "LA 2280",
+      "airline": "LATAM"
+    },
+    {
+      "id": 5,
+      "from": "LIM",
+      "to": "BOG",
+      "date": "2025-02-25",
+      "flightNumber": "AV 8074",
+      "airline": "Avianca"
+    },
+    {
+      "id": 6,
+      "from": "BOG",
+      "to": "MIA",
+      "date": "2025-03-05",
+      "flightNumber": "AA 921",
+      "airline": "American Airlines"
+    },
+    {
+      "id": 7,
+      "from": "MIA",
+      "to": "LAX",
+      "date": "2025-03-08",
+      "flightNumber": "AA 31",
+      "airline": "American Airlines"
+    },
+    {
+      "id": 8,
+      "from": "LAX",
+      "to": "FCO",
+      "date": "2025-04-12",
+      "flightNumber": "AZ 618",
+      "airline": "ITA Airways"
+    },
+    {
+      "id": 9,
+      "from": "FCO",
+      "to": "BCN",
+      "date": "2025-04-20",
+      "flightNumber": "VY 6105",
+      "airline": "Vueling"
+    },
+    {
+      "id": 10,
+      "from": "BCN",
+      "to": "SFO",
+      "date": "2025-04-28",
+      "flightNumber": "UA 60",
+      "airline": "United Airlines"
+    }
+  ]
+}

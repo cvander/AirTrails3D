@@ -1,0 +1,84 @@
+{
+  "2025": [
+    {
+      "id": 1,
+      "from": "MEX",
+      "to": "ICN",
+      "date": "2025-03-15",
+      "flightNumber": "KE 036",
+      "airline": "Korean Air"
+    },
+    {
+      "id": 2,
+      "from": "ICN",
+      "to": "NRT",
+      "date": "2025-03-22",
+      "flightNumber": "NH 864",
+      "airline": "ANA"
+    },
+    {
+      "id": 3,
+      "from": "NRT",
+      "to": "TPE",
+      "date": "2025-03-28",
+      "flightNumber": "CI 100",
+      "airline": "China Airlines"
+    },
+    {
+      "id": 4,
+      "from": "TPE",
+      "to": "ICN",
+      "date": "2025-04-05",
+      "flightNumber": "OZ 712",
+      "airline": "Asiana Airlines"
+    },
+    {
+      "id": 5,
+      "from": "ICN",
+      "to": "CDG",
+      "date": "2025-05-10",
+      "flightNumber": "AF 136",
+      "airline": "Air France"
+    },
+    {
+      "id": 6,
+      "from": "CDG",
+      "to": "BCN",
+      "date": "2025-05-15",
+      "flightNumber": "VY 8002",
+      "airline": "Vueling"
+    },
+    {
+      "id": 7,
+      "from": "BCN",
+      "to": "MAD",
+      "date": "2025-05-20",
+      "flightNumber": "IB 1014",
+      "airline": "Iberia"
+    },
+    {
+      "id": 8,
+      "from": "MAD",
+      "to": "GIG",
+      "date": "2025-06-02",
+      "flightNumber": "IB 6463",
+      "airline": "Iberia"
+    },
+    {
+      "id": 9,
+      "from": "GIG",
+      "to": "EZE",
+      "date": "2025-06-08",
+      "flightNumber": "AR 1244",
+      "airline": "Aerolíneas Argentinas"
+    },
+    {
+      "id": 10,
+      "from": "EZE",
+      "to": "MEX",
+      "date": "2025-06-15",
+      "flightNumber": "AM 028",
+      "airline": "Aeroméxico"
+    }
+  ]
+}

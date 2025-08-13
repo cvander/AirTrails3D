@@ -82,7 +82,15 @@
 
     <!-- Data -->
     <script src="/js/data/airport-data.js"></script>
-    <script src="/js/data/rosalia-routes.json"></script>
+    <script>
+        // Load Rosalia's routes data
+        fetch('/js/data/rosalia-routes.json')
+            .then(response => response.json())
+            .then(data => {
+                window.rosaliaRoutes = data;
+            })
+            .catch(error => console.error('Error loading rosalia routes:', error));
+    </script>
 
     <!-- Globe app -->
     <script src="/js/app/globe.js"></script>

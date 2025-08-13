@@ -82,7 +82,15 @@
 
     <!-- Data -->
     <script src="/js/data/airport-data.js"></script>
-    <script src="/js/data/john-routes.json"></script>
+    <script>
+        // Load John's routes data
+        fetch('/js/data/john-routes.json')
+            .then(response => response.json())
+            .then(data => {
+                window.johnRoutes = data;
+            })
+            .catch(error => console.error('Error loading john routes:', error));
+    </script>
 
     <!-- Globe app -->
     <script src="/js/app/globe.js"></script>
