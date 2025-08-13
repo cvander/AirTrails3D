@@ -83,16 +83,20 @@
     <!-- Data -->
     <script src="/js/data/airport-data.js"></script>
     <script>
-        // Load John's routes data
+        // Load John's routes data and then initialize the globe
         fetch('/js/data/john-routes.json')
             .then(response => response.json())
             .then(data => {
                 window.johnRoutes = data;
+                // Load and initialize globe after data is ready
+                const script = document.createElement('script');
+                script.src = '/js/app/globe.js';
+                document.head.appendChild(script);
             })
-            .catch(error => console.error('Error loading john routes:', error));
+            .catch(error => {
+                console.error('Error loading john routes:', error);
+                document.getElementById('flight-info').textContent = 'Error loading flight data. Check console for details.';
+            });
     </script>
-
-    <!-- Globe app -->
-    <script src="/js/app/globe.js"></script>
 </body>
 </html>

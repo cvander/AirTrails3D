@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
+// Initialize when DOM is ready and ensure data is loaded
+function initializeGlobe() {
     // Set up Three.js scene, camera and renderer
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -697,4 +698,5 @@ document.addEventListener('DOMContentLoaded', function() {
     const defaultBtn = document.querySelector(`#year-selector .route-btn[data-year="${defaultYear}"]`);
     if (defaultBtn) defaultBtn.classList.add('active');
     animateFlightsForYear(defaultYear);
-});
+};
+

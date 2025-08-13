@@ -27,14 +27,18 @@ This project creates immersive 3D visualizations of travel routes on an interact
 ## 🛠 Technical Stack
 
 ### Backend
-- **Node.js** - Local development server with live reloading
-- **Express-style routing** - Clean URL handling (`/john-doe`, `/maria-rodriguez`)
+- **Node.js** - Zero-dependency HTTP server using built-in modules only
+- **Static File Serving** - Clean URL routing (`/john-doe`, `/rosalia`)
 
 ### Frontend  
-- **Three.js** - 3D graphics and WebGL rendering
+- **Three.js** - 3D graphics and WebGL rendering (loaded via CDN)
 - **Orbit Controls** - Interactive camera movement
 - **Earth Textures** - High-resolution NASA Earth imagery
 - **Post-processing** - Bloom effects and visual enhancements
+
+### Dependencies
+- **✨ Zero npm dependencies** - Runs with Node.js built-in modules only
+- **CDN-based** - All Three.js libraries loaded from jsdelivr CDN
 
 ### Data Format
 - **JSON Route Files** - Structured flight data with IATA codes
@@ -63,18 +67,19 @@ airtrails3d/
 
 ## 🚀 Quick Start
 
-### 1. Clone and Install
+### 1. Clone Repository
 ```bash
 git clone <repository-url>
 cd airtrails3d
-npm install
 ```
 
-### 2. Start Development Server
+### 2. Start Server
 ```bash
-npm run dev
+node server.js
 # Server starts at http://localhost:3000
 ```
+
+> **Note:** No `npm install` needed! This project has zero dependencies and runs with Node.js built-in modules only.
 
 ### 3. View Visualizations
 - John Doe's routes: `http://localhost:3000/john-doe`
