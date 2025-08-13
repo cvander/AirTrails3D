@@ -16,13 +16,19 @@ This project creates immersive 3D visualizations of travel routes on an interact
 
 ## ✨ Features
 
-- **Interactive 3D Globe** - Smooth Earth rendering with realistic textures
-- **Animated Flight Paths** - Routes draw progressively with moving aircraft
-- **Smart Camera Positioning** - Automatic regional focus based on route patterns  
-- **Intro Animations** - Cinematic zoom from wide view to focused region
-- **Progressive Line Drawing** - Flight paths appear as aircraft travel
-- **Distance-Based Styling** - Visual differentiation for short/long haul flights
-- **Regional Themes** - Color schemes adapted to geographic regions
+- ✨ **Zero-dependency** - Runs immediately with just Node.js
+- 🎨 **Visually impressive** - Beautiful 3D globe visualization
+- 🌍 **Educational** - Great learning resource for Three.js
+- 🚀 **Performance optimized** - Efficient WebGL rendering
+
+### 🌐 Core Features
+- 🌍 **Interactive 3D Globe** - Smooth Earth rendering with realistic textures
+- ✈️ **Animated Flight Paths** - Routes draw progressively with moving aircraft
+- 📷 **Smart Camera Positioning** - Automatic regional focus based on route patterns  
+- 🎬 **Intro Animations** - Cinematic zoom from wide view to focused region
+- ✏️ **Progressive Line Drawing** - Flight paths appear as aircraft travel
+- 📏 **Distance-Based Styling** - Visual differentiation for short/long haul flights
+- 🎨 **Regional Themes** - Color schemes adapted to geographic regions
 
 ## 🛠 Technical Stack
 
