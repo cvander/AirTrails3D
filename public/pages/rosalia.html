@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rosalia Routes 2025 - AirTrails3D Sample: K-pop fan tours across Latin America, Europe, and Asia">
+    <title>Rosalia Routes 2025 - AirTrails3D Sample</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✈️</text></svg>">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        body { margin: 0; padding: 0; overflow: hidden; background-color: #000; }
+        #globe { position: absolute; top: 0; left: 0; width: 100%; height: 100vh; }
+        .flight-info { background-color: rgba(40, 44, 52, 0.85); }
+        .attribution {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 12px;
+            z-index: 100;
+        }
+        .attribution a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+        }
+        .attribution a:hover {
+            text-decoration: underline;
+        }
+        .sample-notice {
+            position: absolute;
+            top: 70px;
+            left: 20px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 13px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 8px 12px;
+            border-radius: 5px;
+            z-index: 100;
+            border-left: 3px solid #dc267f;
+        }
+        .sample-notice strong {
+            color: #dc267f;
+        }
+    </style>
+    <script>
+        window.DEFAULT_YEAR = '2025';
+    </script>
+</head>
+<body>
+    <div class="flight-title">Rosalia 2025 Routes</div>
+    <div class="sample-notice">
+        <strong>AirTrails3D Sample:</strong> K-pop fan following concerts<br>
+        Latin America • Europe • Asia
+    </div>
+    <div class="flight-year">2025 K-pop Tours</div>
+    <div class="route-selector" id="year-selector" style="top: 95px;">
+        <a href="#" class="route-btn active" data-year="2025">2025</a>
+    </div>
+
+    <div id="globe"></div>
+    <div class="flight-info" id="flight-info">Loading Rosalia routes...</div>
+    
+    <!-- Attribution -->
+    <div class="attribution">Built by <a href="https://cvander.com" target="_blank" rel="noopener noreferrer">Cvander</a></div>
+
+    <!-- Three.js core -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <!-- Lines -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/lines/LineSegmentsGeometry.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/lines/LineGeometry.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/lines/LineMaterial.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/lines/LineSegments2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/lines/Line2.js"></script>
+    <!-- Post-processing -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/postprocessing/RenderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/shaders/CopyShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/shaders/LuminosityHighPassShader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/postprocessing/UnrealBloomPass.js"></script>
+
+    <!-- Data -->
+    <script src="/js/data/airport-data.js"></script>
+    <script src="/js/data/rosalia-routes.json"></script>
+
+    <!-- Globe app -->
+    <script src="/js/app/globe.js"></script>
+</body>
+</html>
